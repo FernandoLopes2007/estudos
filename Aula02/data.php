@@ -2,11 +2,11 @@
     class DATA{
         private $nome="";
 
-        public function setNome($n): void{
+        public function setNome($n) {
             $this->nome = $n;
         }
 
-        public function getNome(): mixed{
+        public function getNome() {
             return $this-> nome;
         }
     }
