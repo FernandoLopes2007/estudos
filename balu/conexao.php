@@ -1,0 +1,13 @@
+<?php
+    class Conexao{
+        public static $instancia;
+        public static function getConexao(){
+            if(!isset(self::$instancia)){
+                self::$instancia = new PDO(dsn: 'mysql:host=localhost;dbname=bd_agenda_contato;charset=utf8',username: 'root', password: 'root');
+                return self::$instancia;
+                }else{
+                return self::$instancia;
+            }
+        }
+    }
+?>

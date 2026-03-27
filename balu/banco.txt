@@ -1,0 +1,17 @@
+create database if not exists bd_agenda_contato;
+use bd_agenda_contato;
+
+create table contato
+(
+	id_contato int auto_increment primary key,
+    nome_contato varchar(255) not null,
+    email_contato varchar(255),
+    telefone_contato varchar(20),
+    data_cadastro datetime default now()
+);
+
+insert into contato (nome_contato, email_contato, telefone_contato) values
+('Ryan', 'ryan@email','912341234'),
+('Fernando','fernando@email','987651212'),
+('João','joao@email','977761234');
+
